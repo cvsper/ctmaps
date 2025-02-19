@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- <link rel="stylesheet" href="assets/css/colorvariants/default.css" id="defaultscheme"> -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Bootstrap-5 -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!-- custom-styles -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/animation.css')}}">
+</head>
+<body>
+
+    <!-- background -->
+    <div class="ls-bg">
+        <video playsinline autoplay muted loop class="ls-bg-inner">
+            <source src="{{ url_for( 'static', filename='assets/images/bg.mp4')}}">
+        </video>
+    </div>
+
+    <main class="overflow-hidden">
+        <div class="wrapper">
+            <div class="main-inner">
+
+                <!-- logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="{{ url_for( 'static', filename='assets/images/logo.png')}}" alt="BeRifma">
+                    </div>
+                    <div class="logo-text">
+                        HexaLabs
+                    </div>
+                </div>
+                <div class="row h-100 align-content-center">
+                    <div class="col-md-6 tab-100 order_2">
+
+                        <!-- side text -->
+                        <div class="side-text">
+                            <article>
+                                <span>Connecticut</span>
+                                <h5 class="main-heading" style='font-size:5vw;'>Towns & counties</h5>
+                                <p>
+                                    TechConnect CT helps Connecticut residents and businesses find vetted technicians with ease. With location-based search, customer reviews, and real-time booking, it makes hiring skilled professionals quick and hassle-free.
+                                </p>
+                            </article>
+
+                            <!-- login sign up button -->
+                            <div class="logSign">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 tab-100">
+
+                        <!-- form -->
+                        <div class="form">
+                                <h2 class="login-form form-title">
+                                    Connecticut Technicians
+                                </h2>
+                                <h2 class="signup-form form-title">
+                                    Find your Technician
+                                </h2>
+
+                                <!-- login form -->
+                            <form id="step1" class="login-form" method="post">
+                                <div class="input-field">
+                                    <input type="text" id="username" name="city" required>
+                                    <label>
+                                        Please enter name of the city
+                                    </label>
+                                </div>
+                                <div class="login-btn">
+                                    <button value='submit' type="submit" class="login">Find your Technician!</button>
+                                </div>
+                            </form>
+
+                            <!-- sign up form -->
+                            
+
+                            <!-- social sign in -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <div id="error">
+
+    </div>
+
+
+    <!-- Bootstrap-5 -->
+    <script src="{{ url_for( 'static', filename='assets/js/bootstrap.min.js')}}"></script>
+
+    <!-- Jquery -->
+    <script src="{{ url_for( 'static', filename='assets/js/jquery-3.6.1.min.js')}}"></script>
+
+    <!-- My js -->
+    <script src="{{ url_for( 'static', filename='assets/js/custom.js')}}"></script>
+</body>
+</html>

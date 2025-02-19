@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Bootstrap-5 -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/bootstrap.min.css')}}">
+
+    <!-- custom-styles -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/style2.css')}}">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='assets/css/animation2.css')}}">
+</head>
+<body>
+
+    <main class="popreveal overflow-hidden thankyou">
+        <div class="row">
+            <div class="sidebar col-md-3 orders">
+                <div class="sidebar-inner">
+
+                    <!-- logo -->
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="{{ url_for( 'static', filename='assets/images/logo.png')}}" alt="BeRifma">
+                        </div>
+                        <div class="logo-text">
+                            HexaLab<span></span>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+            <div class="steps-col col-md-9">
+                <div class="wrapper">
+
+                    <!-- thankyou page -->
+                    <div class="thankyou-inner">
+                        <div class="check">
+                            <img src="{{ url_for( 'static', filename='assets/images/checkmark.png')}}" alt="">
+                        </div>
+                        <span class="msg">Your submission has been received</span>
+                        <h1 class="thankyou-text">{{tech}}</h1>
+
+                        <!-- social -->
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap-5 -->
+    <script src="{{ url_for( 'static', filename='assets/js/bootstrap.min.js')}}"></script>
+</body>
+</html>
